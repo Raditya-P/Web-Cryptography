@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<title>CUY</title>
+        <script src="script.js"></script>
+	</head>
+	
+	<body>
+		<div id="background"></div>
+		<div class=container>
+			<div class="divTablefullwidth">
+				<div class="divTableBody">
+					<div class="divTableRow">
+						<div class="divTableCell" style="float: left;">
+							<h1>CUY - Cryptographic Utilization Yield</h1>
+							<h4>Web untuk encrypt dan decrypt files.</h4>
+						</div>
+						<div class="divTableCell" style="float: right;">
+							<!-- <h1>
+								<button id="btnDivDecrypt" onClick="location.href='decrypt.html'">Decrypt a File</button>
+								<button id="btnDivDecrypt" onClick="location.href='about.html'">About Us</button>
+							</h1> -->
+							<nav>
+								<div class="logo-container">
+									<img class="logo" src="Cuy-Logo.svg" alt="Cuy Logo">
+								</div>
+								<!-- <div class="btn-div"> -->
+									<ul class="nav-links">
+										<li><a id="btnDivDecrypt" onClick="location.href='decrypt.html'">Decrypt A File</a></li>
+										<li><a id="btnDivDecrypt" onClick="location.href='about.html'">About Us</a></li>
+									</ul>
+								<!-- </div> -->
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+        
+
+<div class="container" id=divEncryptfile>
+	<div class="card">
+		<div class="card-details">
+			<h2 class="text-title">Encrypt File</h2>
+			<p class="text-body">Untuk Encrypt file, drop file yang akan di encrypt ke dropzone dibawah, lalu masukan password ke input box yang tersedia. File tersebut kemudian akan di encrypt menggunakan password lalu kita bisa mendownload filenya ke system.</p>
+			
+			<div class="divTable">
+				<div class="divTableBody">
+					<div class="divTableRow">
+						<div class="divTableCell"><input id="txtEncpassphrase" type="password" class="password-input" placeholder="Password" size="30" onkeyup="javascript:encvalidate();" value="" hidden></div>
+						<div class="divTableCell" id="minCharMsg" style="display:none;">(minimum panjang 8 karakter!)</div>
+					</div>
+					<div class="divTableRow">
+						<div class="divTableCell"><input id="txtEncpassphraseretype" type="password" class="password-input" placeholder="Password (retype)" size="30" onkeyup="javascript:encvalidate();" value="" hidden></div>
+						<div class="divTableCell"><span class="greenspan" id="spnCheckretype"></span></div>
+					</div>
+				</div>
+			</div>
+			
+			<p class="text-body"> </p>
+			
+			<div class="divTable">
+				<div class="divTableBody">
+					<div class="divTableRow">
+						<div class="divTableCell">
+							<button id="btnEncrypt" onclick=javascript:encryptfile(); disabled class="card-button" hidden>Encrypt File</button></div>
+							<div class="divTableCell"><span id="spnEncstatus"></span></div>
+						</div>
+						<div>
+							<a id=aEncsavefile hidden><button class="card-button">Save Encrypted File</button></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+            
+           
+            
+
+		</div>
+
+			<div class="container">
+				<div class="dropzone" role="button" onclick="decfileElem.click();" id="decdropzone" ondrop="drop_handler(event);" ondragover="dragover_handler(event);" ondragend="dragend_handler(event);">
+					<h3>Drop file here</h3>
+					<p>or click to select file</p>
+				 <span id="spndecfilename"></span>
+				  <input type="file" id="decfileElem" style="display:none" onchange="selectfile(this.files); document.getElementById('txtEncpassphrase').removeAttribute('hidden'); document.getElementById('txtEncpassphraseretype').removeAttribute('hidden'); document.getElementById('btnEncrypt').removeAttribute('hidden');" />
+				</div>
+			  </div>
+
+		<BR>
+		</body>
+	</html>

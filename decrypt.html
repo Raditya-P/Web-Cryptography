@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>CUY</title>
+		<link rel="stylesheet" type="text/css" href="style.css">	
+        <!-- <button onclick="location.href='index.html'">Home</button> -->
+        <script src="script.js"></script>
+
+	</head>
+	<body>
+		<nav>
+			<div class="logo-container">
+				<img class="logo" src="Cuy-Logo.svg" alt="Cuy Logo">
+			</div>
+			<ul class="nav-links">
+                <li><a id="btnDivDecrypt" onClick="location.href='index.html'">Home</a></li>
+            </ul>
+		</nav>
+        <div class="container" id=divDecryptfile>
+			<div class="card">
+				<div class="card-details">
+
+			<h2>Decrypt File</h2>
+			<p>Upload File terlebih dahulu lalu masukan password.</p>
+			<p>Decrypt file menggunakan password yang sebelumnya dipakai untuk menencrypt filenya. Setelah file di decrypt kita bisa mendownload filenya ke system.</p>
+
+			<div class="divTable">
+				<div class="divTableBody">
+					<div class="divTableRow">
+						<div class="divTableCell"><input id=txtDecpassphrase type=password class="password-input" placeholder="Password" size=30 onkeyup=javascript:decvalidate(); value=''></div>
+					
+					</div>
+				</div>
+			</div>
+
+			<p class="text-body"> </p>
+
+			<div class="divTable">
+						<div class="divTableBody">
+							<div class="divTableRow">
+								<div class="divTableCell"><button id=btnDecrypt  class="card-button" onclick=javascript:decryptfile(); disabled>Decrypt File</button></div>
+								<div class="divTableCell"><span id=spnDecstatus></span></div>
+							</div>
+							<div>
+								<a id=aDecsavefile hidden><button class="card-button">Save Decrypted File</button></a>
+							</div>
+						</div>
+					</div>
+		</div>
+	</div>
+	
+</div>
+
+			<div class="container">
+						<div class="dropzone" role="button" onclick="decfileElem.click();" id="decdropzone" ondrop="drop_handler(event);" ondragover="dragover_handler(event);" ondragend="dragend_handler(event);">
+							<h3>Drop file here</h3>
+                			<p>or click to select file</p>
+						<span id="spndecfilename"></span>
+							<input type="file" id="decfileElem" style="display:none" onchange="selectfile(this.files)">
+						</div>
+					</div>
+			
+		<BR>
+	</body>
+</html>

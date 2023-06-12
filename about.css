@@ -1,0 +1,293 @@
+
+
+a, a:link, a:visited, a:active {
+    color: blue;
+    text-decoration: underline;
+}
+
+a:hover {
+    cursor:pointer;
+    color: red;
+}
+
+.black10pointcourier {
+      font-family: 'courier'; 
+    color: black;
+    font-size: 10pt;		
+}
+
+.divTablefullwidth{
+    display: table;
+    width: 100%;
+}
+
+.divTable{
+    display: table;
+}
+
+.divTableCell {
+    display: table-cell;
+    padding: 3px 3px;
+    
+}
+.divTableBody {
+    display: table-row-group;
+    
+}
+
+.greenspan {
+    color: green;	  
+}
+
+.redspan {
+    color: red;	  
+}
+
+body {
+font-family: 'Courier New', Courier, monospace;
+color: rgb(0, 0, 0);
+font-size: 11pt;		
+background-image: url('stacked-waves-haikei.svg');
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.your-class {
+background-image: url('stacked-waves-haikei.svg');
+}
+
+a, a:link, a:visited, a:active {
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+}
+
+a:hover {
+  cursor:pointer;
+  color: red;
+}
+
+.black10pointcourier {
+    font-family: 'courier'; 
+  color: black;
+  font-size: 10pt;		
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 10px;
+  font-size: 9pt;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),
+    0 24px 46px var(--box-shadow-color);
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease-out;
+}
+
+.container .overlay {
+  transition: transform 0.3s ease-out;
+}
+
+.container:hover .overlay {
+  transform: scale(4);
+}
+
+.container .circle {
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  position: relative;
+  transition: background-color 0.3s ease-out, border-color 0.3s ease-out;
+}
+
+.container:hover .circle {
+  border-color: var(--bg-color-light);
+  background: var(--bg-color);
+  transition: background-color 0.3s ease-out, border-color 0.3s ease-out;
+}
+
+.container .circle:after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background: #ffffff;
+  z-index: -1;
+  transition: background-color 0.3s ease-out;
+}
+
+.container:hover .circle:after {
+  background: var(--bg-color-light);
+}
+
+.container p {
+  font-size: 17px;
+  color: #4c5656;
+  margin-top: 30px;
+  z-index: 1000;
+  transition: color 0.3s ease-out;
+}
+
+.container:hover p {
+  color: var(--text-color-hover);
+}
+
+#btnDivDecrypt {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+
+#btnDivDecrypt:hover {
+  background-color: #0069d9;
+}
+
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+button:hover {
+  background-color: #0069d9;
+}
+  
+  #btnDivDecrypt {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #btnDivDecrypt:hover {
+    background-color: #0069d9;
+  }
+  
+  button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0069d9;
+  }
+
+  .logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    height: 50px; /* atur sesuai ukuran logo */
+    width: auto; /* atur sesuai ukuran logo */
+    margin: 0;
+    padding: 0;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 50px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+  }
+
+  .logo-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    }
+    
+    .logo {
+    height: 40px;
+    margin-right: 20px;
+    }
+    
+    .nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+    }
+    
+    .nav-links li {
+    list-style: none;
+    }
+    
+    .nav-links a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+    }
+    
+    .nav-links a:hover {
+    background-color: #333;
+    color: #fff;
+    }
+
+  
+
+ 
+  
+  
+  
+  
+  
