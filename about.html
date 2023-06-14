@@ -20,16 +20,13 @@
 		<p>Halaman web ini digunakan untuk mengenkripsi file dengan kata sandi tertentu dan juga bisa digunakan untuk mendekripsi file yang telah dienkripsi dengan kata sandi yang sama. Pastikan kata sandi yang digunakan untuk mengenkripsi file sama dengan yang digunakan untuk mendekripsi nantinya. Jika kata sandi hilang atau terlupa, maka tidak dapat dipulihkan kembali!</p>
 
 		<h3>Operasi dan Privasi</h3>
-		<p>Halaman ini menggunakan javascript yang berjalan dalam browser Anda untuk melakukan enkripsi dan dekripsi file di sisi client. Halaman ini tidak melakukan koneksi jaringan selama proses tersebut, sehingga file dan kunci Anda tidak pernah meninggalkan browser selama proses. Hal ini dapat diverifikasi secara independen dengan meninjau kode sumber atau dengan memonitor aktivitas jaringan browser Anda selama pengoperasian halaman ini. Halaman ini juga dapat diunduh dan dijalankan secara offline pada sistem Anda.</p>
+		<p>Website ini menggunakan javascript yang berjalan dalam browser Anda untuk melakukan enkripsi dan dekripsi file di sisi client. Halaman ini tidak melakukan koneksi jaringan selama proses tersebut, sehingga file dan kunci Anda tidak pernah meninggalkan browser selama proses. Hal ini dapat diverifikasi secara independen dengan meninjau kode sumber atau dengan memonitor aktivitas jaringan browser Anda selama pengoperasian website ini.</p>
 
 		<h3>Kriptografi</h3>
-		<p>Semua kriptografi dilakukan di sisi client menggunakan <a href="https://developer.mozilla.org/id/docs/Web/API/Web_Crypto_API">Web Crypto API</a>. File dienkripsi menggunakan enkripsi simetris AES-CBC 256-bit. Kunci enkripsi diperoleh dari kata sandi dan salt acak yang digunakan dalam PBKDF2 derivation dengan 10000 iterasi hash SHA256.</p>
+		<p>File dienkripsi menggunakan enkripsi simetris AES-CBC 256-bit. Kunci enkripsi diperoleh dari kata sandi dan salt acak yang digunakan dalam PBKDF2 derivation dengan 10000 iterasi hash SHA256.</p>
 
 		<h3>Kompatibilitas dengan openssl</h3>
-		<p>Enkripsi yang digunakan oleh halaman ini kompatibel dengan <a href="https://www.openssl.org/docs/man1.1.1/man1/openssl-enc.html">openssl</a>.<br>File yang dienkripsi menggunakan halaman ini dapat didekripsi menggunakan openssl dengan perintah berikut:<br><span>openssl aes-256-cbc -d -salt -pbkdf2 -iter 10000 -in <i>namafileterenkripsi</i> -out <i>namafileasli</i></span><br>File yang dienkripsi menggunakan openssl dapat didekripsi menggunakan halaman ini dengan cara berikut:<br><span>openssl aes-256-cbc -e -salt -pbkdf2 -iter 10000 -in <i>namafileasli</i> -out <i>namafileterenkripsi</i></span></p>
-
-		<h3>Mengoperasikan halaman ini secara offline</h3>
-		<p>Halaman web ini mandiri. Halaman tidak memerlukan file pendukung apa pun; semua javascript dan css untuk halaman ini terdapat dalam kode sumber halaman ini. Untuk menjalankan halaman ini secara lokal di sistem Anda secara offline, cukup simpan halaman ini ke sistem Anda sebagai file .html, lalu buka file dari sistem Anda di browser web Anda (opsional dengan networking dinonaktifkan).</p>
+		<p>Enkripsi yang digunakan oleh halaman ini kompatibel dengan <a href="https://www.openssl.org/docs/man1.1.1/man1/openssl-enc.html">openssl</a>.<br>File yang dienkripsi menggunakan website ini dapat didekripsi menggunakan openssl dengan perintah berikut:<br><span>openssl aes-256-cbc -d -salt -pbkdf2 -iter 10000 -in <i>namafileterenkripsi</i> -out <i>namafileasli</i></span><br>File yang dienkripsi menggunakan openssl dapat didekripsi menggunakan website ini dengan cara berikut:<br><span>openssl aes-256-cbc -e -salt -pbkdf2 -iter 10000 -in <i>namafileasli</i> -out <i>namafileterenkripsi</i></span></p>
 
 		<h3>GitHub</h3>
 		<p>Proyek ini dapat ditemukan di GitHub di <a href="https://github.com/RP-Tama/Web-Cryptography">https://github.com/RP-Tama/Web-Cryptography</a>.</p>
