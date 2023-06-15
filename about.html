@@ -20,14 +20,11 @@
 		<p>Web ini digunakan untuk mengenkripsi file dengan kata sandi tertentu dan juga bisa digunakan untuk mendekripsi file yang telah dienkripsi dengan kata sandi yang sama. Pastikan kata sandi yang digunakan untuk mengenkripsi file sama dengan yang digunakan untuk mendekripsi nantinya. Jika kata sandi hilang atau terlupa, maka tidak dapat dipulihkan kembali!</p>
 	
 		<h3>Kriptografi</h3>
-		<p>Semua kriptografi dilakukan di sisi klien menggunakan <a href="https://developer.mozilla.org/id/docs/Web/API/Web_Crypto_API">Web Crypto API</a>. File dienkripsi menggunakan enkripsi simetris AES-CBC 256-bit. Kunci enkripsi diperoleh dari kata sandi dan salt acak yang digunakan dalam PBKDF2 derivation dengan 10.000 iterasi hash SHA256.</p>
-	
-		<h3>Kompatibilitas dengan OpenSSL</h3>
-		<p>Enkripsi yang digunakan oleh website ini kompatibel dengan <a href="https://www.openssl.org/docs/man1.1.1/man1/openssl-enc.html">OpenSSL</a>. File yang dienkripsi menggunakan website ini dapat didekripsi menggunakan OpenSSL dengan perintah berikut:<br><code>openssl aes-256-cbc -d -salt -pbkdf2 -iter 10000 -in <i>namafileterenkripsi</i> -out <i>namafileasli</i></code><br>File yang dienkripsi menggunakan OpenSSL dapat didekripsi menggunakan website ini dengan cara berikut:<br><code>openssl aes-256-cbc -e -salt -pbkdf2 -iter 10000 -in <i>namafileasli</i> -out <i>namafileterenkripsi</i></code></p>
-	
-		<h3>Operasi dan Privasi</h3>
-		<a href="https://smallpdf.com/file#s=e607f5c6-279c-4187-b934-37adbe605d76"></a>
+		<p>File dienkripsi menggunakan enkripsi simetris AES-CBC 256-bit. Kunci enkripsi diperoleh dari kata sandi dan salt acak yang digunakan dalam PBKDF2 derivation dengan 10000 iterasi hash SHA256.</p>
+		
+		<h3>Keamanan dan Privasi</h3>
 		<p>Website ini di-deploy menggunakan Vercel, sebuah platform pengembangan perangkat lunak yang terpercaya dan aman. Vercel menyediakan fitur keamanan dan enkripsi yang kuat untuk melindungi aplikasi dan konten yang di-hosting di platform mereka. Source code dari website ini dapat dilihat di GitHub melalui tautan berikut: <a href="https://github.com/RP-Tama/Web-Cryptography">https://github.com/RP-Tama/Web-Cryptography</a>.</p>
+		<p>Untuk melihat lebih detail:<a href="SYARAT DAN KETENTUAN PENGGUNAAN WEBSITE CRYPTOGRAPHIC UTILIZATION YIELD.pdf" download>Privacy And Policy Cryptographic Utilization Yield</a></p>
 	</div>	
 
 </body>
